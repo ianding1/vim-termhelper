@@ -2,6 +2,8 @@
 
 **The last piece of the Vim-Terminal jigsaw.**
 
+![Banner][banner]
+
 TermHelper allows the user to open a file in a Vim buffer from a embedded
 terminal.
 
@@ -60,3 +62,5 @@ Open the file in the preview window in Vim.
 # Set to 1 not to define the predefined aliases.
 export TERMHELPER_NO_ALIAS=0
 ```
+
+[banner]: https://i.imgur.com/0y1ixeC.png
