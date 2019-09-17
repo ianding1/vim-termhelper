@@ -1,10 +1,10 @@
 # TermHelper
 
-**The last piece of the Vim-Terminal jigsaw.**
+**The last piece of the terminal puzzle.**
 
 ![Banner][banner]
 
-TermHelper allows the user to open a file in a Vim buffer from a embedded
+TermHelper allows the user to open a file in a Vim buffer from an embedded
 terminal.
 
 This plugin **doesn't support Neovim** due to Neovim lacking the mechanism to
