@@ -67,4 +67,4 @@ export TERMHELPER_NO_ALIAS=0
 Set to 1 not to define the aliases, such as `other`. In that case, you can still
 use the full name `termhelper_CMD` to refer to them, *e.g.*, `termhelper_other`.
 
-[banner]: https://i.imgur.com/0y1ixeC.png
+[banner]: https://i.imgur.com/pMSYB5W.png
