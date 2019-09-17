@@ -51,5 +51,5 @@ if ((!TERMHELPER_NO_ALIAS)) ; then
     alias drop='termhelper_drop'
     alias new='termhelper_new'
     alias vnew='termhelper_vnew'
-    alias prv='termhelper_preview'
+    alias preview='termhelper_preview'
 fi

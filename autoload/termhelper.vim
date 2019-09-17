@@ -48,18 +48,11 @@ function! s:Preview(fname) abort
 endfunction
 
 function! s:Other(fname) abort
-  if winnr('$') != 2
-    echo 'More than 2 windows'
+  if winnr('$') == 1
+    echo 'Only one window'
     return
   endif
 
-  for winnum in range(1, winnr('$'))
-    if winnum != winnr()
-      let saved_winnum = winnr()
-      exec winnum . 'wincmd w'
-      exec 'edit ' . s:EscapeArg(a:fname)
-      exec saved_winnum . 'wincmd w'
-      return
-    endif
-  endfor
+  wincmd w
+  exec 'edit ' . s:EscapeArg(a:fname)
 endfunction

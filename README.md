@@ -18,8 +18,8 @@ Plug 'ianding1/vim-termhelper'
 ```
 2. Add this line to *~/.bashrc* or *~/.zshrc*:
 ```bash
-[[ -n "$TERMHELPER_SCRIPTS_DIR" ]] && source
-"$TERMHELPER_SCRIPTS_DIR/setup_termhelper.sh"
+[[ -n "$TERMHELPER_SCRIPTS_DIR" ]] && \
+  source "$TERMHELPER_SCRIPTS_DIR/setup_termhelper.sh"
 ```
 
 ## Terminal Commands
@@ -28,8 +28,7 @@ Plug 'ianding1/vim-termhelper'
 other <file>
 ```
 
-Open the file in the other window in Vim if there are only two windows, one the
-terminal and the other some other file being edit.
+Open the file in the other window in Vim.
 
 ```bash
 drop <file>
@@ -51,16 +50,21 @@ vnew <file>
 Open the file in a new vertically-split window in Vim. See `:h vnew`.
 
 ```bash
-prv <file>
+preview <file>
 ```
 
 Open the file in the preview window in Vim.
 
 ## Configuration
 
+The configurations should be put before sourcing setup_termhelper.sh in
+*~/.bashrc* or *~/.zshrc*.
+
 ```bash
-# Set to 1 not to define the predefined aliases.
 export TERMHELPER_NO_ALIAS=0
 ```
+
+Set to 1 not to define the aliases, such as `other`. In that case, you can still
+use the full name `termhelper_CMD` to refer to them, *e.g.*, `termhelper_other`.
 
 [banner]: https://i.imgur.com/0y1ixeC.png
